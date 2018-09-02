@@ -1,0 +1,187 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+
+}
+a:hover { text-decoration: none }
+.header-logo img {
+    max-width: 60px;
+    border-radius: 50%;
+}
+
+.mainmenu-area ul {
+    margin: 0;
+    padding: 0;
+    list-style:  none;
+    z-index: 9;
+}
+.mainmenu-area>ul>li {
+    margin: 9px 18px;
+}
+.mainmenu-area ul li {
+    display:  inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.mainmenu-area li a {
+    display:  block;
+    text-transform:  uppercase;
+    font-size:  14px;
+    color: #333;
+    padding: 10px 5px;
+}
+
+.mainmenu-area li:last-child {
+    margin: 0;
+}
+.mainmenu-area ul li:last-child ul {
+    left: auto;
+    right: 0;
+}
+.mainmenu-area li ul {
+    position:  absolute;
+    left: 0;
+    text-align:  left;
+    width: 200px;
+    background:  #C0C0C0;
+    padding: 7px;
+    transition: .3s;
+    top:50px;
+     opacity:  0;
+    visibility:  hidden;
+}
+
+.mainmenu-area li li {
+    position:  relative;
+    margin: 0;
+    display:  block;
+}
+
+.mainmenu-area li ul li:hover a {
+    color: #fff;
+    background: #ddd;
+}
+
+.mainmenu-area ul li:hover ul {
+    opacity:  1;
+    visibility:  visible;
+    top: 40px;
+}
+
+ul.maltipal-menu {
+    position:  absolute;
+}
+
+.mainmenu-area ul li ul.maltipal-menu {
+    position: absolute;
+    left: 251px;
+    top: 30px;
+    opacity:  0;
+    visibility:  hidden;
+    z-index:  -1;
+    transition:  .3s;
+}
+
+.mainmenu-area ul li:hover li:hover ul.maltipal-menu li a {background:  none;}
+
+.mainmenu-area ul li:hover li:hover ul.maltipal-menu li:hover a {
+    background: #DDDDDD;
+}
+
+.mainmenu-area ul li:hover li:hover ul.maltipal-menu {
+    left: 188px;
+    visibility:  visible;
+    opacity:  1;
+    z-index:  1;
+    top: -5px;
+}
+
+.mainmenu-area li.mega-menu {
+    position: static;
+}
+
+.mega-menu-wrap {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: #C0C0C0;
+    padding: 20px;
+    z-index: -1;
+    top: 80px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    transform: scale(0);
+}
+
+.mainmenu-area li.mega-menu .mega-menu-wrap ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    opacity:  1;
+    visibility:  visible;
+    background:none;
+}
+
+.mega-menu-wrap li {
+    position:  relative;
+}
+
+.single-mega-item {
+    text-align:  center;
+    line-height: 1.7;
+}
+
+.single-mega-item h4 {
+    text-transform:  uppercase;
+    font-size:  15px;
+    line-height:  1.4;
+}
+
+.single-mega-item a.mega-btn {
+    background: red;
+    color: #fff;
+    display: block;
+    border-radius:  50px;
+}
+
+.mainmenu-area li.mega-menu:hover .mega-menu-wrap {
+    opacity:  1;
+    visibility:  visible;
+    z-index:  99;
+    top: 60px;
+    transform: scale(1);
+}
+.header-area {
+    background:silver;
+}
+.header-logo {
+    margin-top: 8px;
+}
